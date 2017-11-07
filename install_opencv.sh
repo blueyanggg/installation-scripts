@@ -1,3 +1,4 @@
+# this file comes from milq, and I tested on ubuntu16.04
 ######################################
 # INSTALL OPENCV ON UBUNTU OR DEBIAN #
 ######################################
