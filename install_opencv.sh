@@ -1,4 +1,5 @@
 # this file comes from milq, and I tested on ubuntu16.04
+# if this script doesn't work, try these steps here     https://medium.com/@debugvn/installing-opencv-3-3-0-on-ubuntu-16-04-lts-7db376f93961
 ######################################
 # INSTALL OPENCV ON UBUNTU OR DEBIAN #
 ######################################
