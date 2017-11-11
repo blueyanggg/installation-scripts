@@ -32,3 +32,6 @@ sudo apt-get install unity-tweak-tool
 sudo add-apt-repository ppa:a-v-shkop/chromium
 sudo apt-get update
 sudo apt-get install chromium-browser
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor  #显示网速，内存等
+sudo apt-get update 
+sudo apt-get install indicator-sysmonitor
