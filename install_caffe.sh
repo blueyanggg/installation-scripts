@@ -6,15 +6,16 @@
 CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
 if [ "$USE_CUDNN" != "0" ]; then
   if [ ! -f "/tmp/${CUDNN_TAR_FILE}" ] ; then
-      curl -o /tmp/${CUDNN_TAR_FILE} http://developer.download.nvidia.com/compute/redist/cudnn/v6.0/${CUDNN_TAR_FILE}
+      curl -o /tmp/${CUDNN_TAR_FILE} http://developer2.download.nvidia.com/compute/machine-learning/cudnn/secure/${CUDNN_TAR_FILE}
   fi
 fi
 
 # Add Nvidia's cuda repository
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb
+sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
 
 sudo apt-get update
+sudo apt-get install cuda
 # Note that we do upgrade and not dist-upgrade so that we don't install
 # new kernels; this script will install the nvidia driver in the *currently
 # running* kernel.
