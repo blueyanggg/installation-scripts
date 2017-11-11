@@ -2,7 +2,7 @@
 # if this script doesn't work, try these steps here     https://medium.com/@debugvn/installing-opencv-3-3-0-on-ubuntu-16-04-lts-7db376f93961
 
 
-#on Ubutu      
+#on Ubutu  one commond line    
 sudo apt-get install libopencv-dev python-opencv
 
 # 2 option
