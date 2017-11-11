@@ -3,10 +3,10 @@
 # Below is the script to automatic install caffe, cuda and all it's dependencies. Tested work on AWS g2.2xlarge instance
 # If you do not want to use CuDNN, run with USE_CUDNN=0
 
-CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
+CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v5.0-ga-tgz"
 if [ "$USE_CUDNN" != "0" ]; then
   if [ ! -f "/tmp/${CUDNN_TAR_FILE}" ] ; then
-      curl -o /tmp/${CUDNN_TAR_FILE} http://developer2.download.nvidia.com/compute/machine-learning/cudnn/secure/${CUDNN_TAR_FILE}
+      curl -o /tmp/${CUDNN_TAR_FILE} https://developer.nvidia.com/rdp/assets/cudnn-8.0-linux-x64-v5.0-ga-tgz${CUDNN_TAR_FILE}
   fi
 fi
 
