@@ -2,7 +2,9 @@
 
 # Below is the script to automatic install caffe, cuda and all it's dependencies. Tested work on AWS g2.2xlarge instance
 # If you do not want to use CuDNN, run with USE_CUDNN=0
-
+# first install docker follow
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+# then install nvidia-docker follow the offcial guide
 CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v5.0-ga-tgz"
 if [ "$USE_CUDNN" != "0" ]; then
   if [ ! -f "/tmp/${CUDNN_TAR_FILE}" ] ; then
